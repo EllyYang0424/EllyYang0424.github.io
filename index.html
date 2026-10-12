@@ -3,86 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Elly Yang's personal homepage and engineering portfolio" />
-  <title>Elly Yang's Homepage</title>
+  <meta name="description" content="Elly Yang's GitHub-style engineering portfolio." />
+  <title>Elly Yang · Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#top">Elly Yang</a>
-      <div class="nav-links">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="github-mark" href="https://github.com/EllyYang0424" aria-label="Elly Yang on GitHub">●</a>
+      <a class="wordmark" href="#top">Elly Yang</a>
+      <nav class="top-links" aria-label="Site navigation">
+        <a href="#repositories">Repositories</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-      </div>
-    </nav>
+      </nav>
+      <a class="profile-link" href="https://github.com/EllyYang0424">@EllyYang0424 ↗</a>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">HELLO, WORLD</p>
-        <h1>Hello, I am<br><span>Elly Yang</span></h1>
-        <p class="lead">The farther I go in practice, the closer I come to understanding.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View my projects</a>
-          <a class="button ghost" href="#contact">Contact me</a>
+  <main id="top" class="layout">
+    <aside class="profile-column" id="about">
+      <div class="avatar" aria-hidden="true">EY</div>
+      <h1>Elly Yang</h1>
+      <p class="handle">EllyYang0424</p>
+      <p class="bio">Optoelectronic Engineering undergraduate exploring embedded systems, digital signal processing, FPGA design, and practical hardware-software systems.</p>
+      <p class="motto">The farther I go in practice, the closer I come to understanding.</p>
+      <a class="follow-button" href="mailto:Elly@stu.xiyou.edu.com">Contact me</a>
+      <dl class="profile-facts">
+        <div><dt>Education</dt><dd>Xi'an University of Posts and Telecommunications</dd></div>
+        <div><dt>Focus</dt><dd>Embedded systems · DSP · FPGA · Optics</dd></div>
+        <div><dt>Location</dt><dd>China</dd></div>
+      </dl>
+      <ul class="profile-links">
+        <li><span aria-hidden="true">↗</span><a href="https://ellyyang0424.github.io">ellyyang0424.github.io</a></li>
+        <li><span aria-hidden="true">✉</span><a href="mailto:Elly@stu.xiyou.edu.com">Elly@stu.xiyou.edu.com</a></li>
+        <li><span aria-hidden="true">⌘</span><a href="https://github.com/EllyYang0424">github.com/EllyYang0424</a></li>
+      </ul>
+      <div class="skill-box" aria-label="Technical skills">
+        <span>STM32</span><span>TouchGFX</span><span>Verilog</span><span>Python</span><span>PCB</span><span>Optical simulation</span>
+      </div>
+    </aside>
+
+    <section class="content-column">
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">PERSONAL PORTFOLIO</p>
+        <h2 id="intro-title">Turning ideas into working systems.</h2>
+        <p>I am Elly, an undergraduate student building across optics, embedded development, digital signal processing, and FPGA design. This page keeps every project in one repository-style archive so the implementation, reports, and verification work are easy to find.</p>
+        <div class="stats" aria-label="Portfolio summary">
+          <div><strong>14</strong><span>repositories</span></div>
+          <div><strong>12</strong><span>engineering projects</span></div>
+          <div><strong>4</strong><span>FPGA / RTL studies</span></div>
         </div>
-      </div>
-      <div class="hero-card" aria-label="Profile card">
-        <div class="avatar">EY</div>
-        <p class="card-label">CURRENTLY</p>
-        <p class="card-value">Building useful things<br>Exploring new possibilities</p>
-        <div class="card-meta"><span>China</span><span>Open to ideas</span></div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section container">
-      <p class="eyebrow">ABOUT</p>
-      <h2>About me</h2>
-      <div class="about-grid">
-        <p>Yang Peiying is an undergraduate student in Optoelectronic Information Science and Engineering. I focus on embedded systems, optoelectronic systems, digital signal processing, and FPGA design. My experience includes STM32, TouchGFX, PCB design, optical system simulation, image processing, and FPGA development. I enjoy turning ideas into working hardware and software systems, and I welcome conversations about embedded development, optoelectronic systems, and engineering practice.</p>
-        <div class="skills"><span>STM32</span><span>TouchGFX</span><span>PCB Design</span><span>Optical Simulation</span><span>DSP</span><span>FPGA</span></div>
+      <div class="tabs" role="navigation" aria-label="Portfolio sections">
+        <a class="tab active" href="#repositories">Repositories <b>14</b></a>
+        <a class="tab" href="#about">About</a>
+        <a class="tab" href="#contact">Contact</a>
       </div>
-    </section>
 
-    <section id="projects" class="section container">
-      <p class="eyebrow">SELECTED WORK</p>
-      <h2>Projects and work</h2>
-      <div class="project-grid">
-        <article class="project"><div class="project-index">01</div><h3>16-Point FNT Hardware Core</h3><p>A finite-field number theoretic transform core with a pipelined butterfly datapath and Verilog verification.</p><a href="https://github.com/sndaaa/fnt16-hardware-core">View repository ↗</a></article>
-        <article class="project"><div class="project-index">02</div><h3>Frequency-Domain Dispersion LUT</h3><p>A configurable compensation-coefficient LUT with UART configuration registers and intermediate-result verification.</p><a href="https://github.com/sndaaa/dispersion-compensation-lut">View repository ↗</a></article>
-        <article class="project"><div class="project-index">03</div><h3>Streaming Symbol Synchronization</h3><p>A streaming symbol-synchronization and serial-to-parallel interface with loopback tests and simulation results.</p><a href="https://github.com/sndaaa/streaming-symbol-sync">View repository ↗</a></article>
-        <article class="project"><div class="project-index">04</div><h3>Configurable FNT Dispersion Accelerator</h3><p>A configurable accelerator that combines FNT, a dispersion-compensation LUT, and streaming interfaces.</p><a href="https://github.com/sndaaa/fnt-dispersion-accelerator">View repository ↗</a></article>
-      </div>
-    </section>
+      <section id="repositories" class="repositories" aria-labelledby="repositories-title">
+        <div class="section-heading">
+          <div><h2 id="repositories-title">Repositories</h2><p>All projects and portfolio materials, in one place.</p></div>
+          <label class="search"><span>⌕</span><input id="repo-search" type="search" placeholder="Find a repository..." aria-label="Find a repository" /></label>
+        </div>
+        <div class="repo-grid" id="repo-grid">
+          <article class="repo-card" data-search="fnt16-hardware-core 16-point fnt hardware core verilog python fpga"><div class="repo-card-top"><span class="repo-icon">◈</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/fnt16-hardware-core">fnt16-hardware-core</a></h3><p>Pipelined 16-point finite-field number theoretic transform hardware core with Verilog verification.</p><div class="repo-meta"><span><i class="dot verilog"></i>Verilog</span><span>RTL study</span></div></article>
+          <article class="repo-card" data-search="dispersion-compensation-lut frequency domain lut uart verilog fpga"><div class="repo-card-top"><span class="repo-icon">◈</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/dispersion-compensation-lut">dispersion-compensation-lut</a></h3><p>Configurable frequency-domain dispersion-compensation LUT with UART registers and simulation checks.</p><div class="repo-meta"><span><i class="dot verilog"></i>Verilog</span><span>DSP / RTL</span></div></article>
+          <article class="repo-card" data-search="streaming-symbol-sync symbol synchronization serial parallel interface verilog fpga"><div class="repo-card-top"><span class="repo-icon">◈</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/streaming-symbol-sync">streaming-symbol-sync</a></h3><p>Streaming symbol synchronization and serial-to-parallel interface with loopback verification.</p><div class="repo-meta"><span><i class="dot verilog"></i>Verilog</span><span>Streaming RTL</span></div></article>
+          <article class="repo-card" data-search="fnt-dispersion-accelerator configurable fnt accelerator verilog fpga"><div class="repo-card-top"><span class="repo-icon">◈</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/fnt-dispersion-accelerator">fnt-dispersion-accelerator</a></h3><p>Configurable accelerator combining FNT, dispersion compensation, and streaming interfaces.</p><div class="repo-meta"><span><i class="dot verilog"></i>Verilog</span><span>FPGA study</span></div></article>
+          <article class="repo-card" data-search="elly stm32 audio player touchgfx fatfs dma wav embedded"><div class="repo-card-top"><span class="repo-icon">◌</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-stm32-audio-player">elly-stm32-audio-player</a></h3><p>STM32 audio player project using TouchGFX, FATFS, DMA, and WAV playback.</p><div class="repo-meta"><span><i class="dot c"></i>Embedded</span><span>STM32</span></div></article>
+          <article class="repo-card" data-search="elly optical power meter optical power meter stm32 hardware embedded"><div class="repo-card-top"><span class="repo-icon">◌</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-optical-power-meter">elly-optical-power-meter</a></h3><p>Optical power measurement system covering photodetection, analog front-end design, and display.</p><div class="repo-meta"><span><i class="dot c"></i>Hardware</span><span>Optoelectronics</span></div></article>
+          <article class="repo-card" data-search="elly point light source tracking optical embedded"><div class="repo-card-top"><span class="repo-icon">◌</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-point-light-tracking">elly-point-light-tracking</a></h3><p>Point light source tracking system design for automatic alignment and control.</p><div class="repo-meta"><span><i class="dot matlab"></i>Optics</span><span>System design</span></div></article>
+          <article class="repo-card" data-search="elly laser beam expander laser beam expander optical simulation"><div class="repo-card-top"><span class="repo-icon">◌</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-laser-beam-expander">elly-laser-beam-expander</a></h3><p>Optical design and simulation of a laser beam expander system.</p><div class="repo-meta"><span><i class="dot matlab"></i>Optics</span><span>Simulation</span></div></article>
+          <article class="repo-card" data-search="elly license plate recognition intelligent license plate computer vision ocr"><div class="repo-card-top"><span class="repo-icon">▣</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-license-plate-recognition">elly-license-plate-recognition</a></h3><p>Intelligent license plate recognition project combining image processing and OCR.</p><div class="repo-meta"><span><i class="dot python"></i>Python</span><span>Computer vision</span></div></article>
+          <article class="repo-card" data-search="elly digital quiz buzzer digital quiz buzzer hardware digital circuit"><div class="repo-card-top"><span class="repo-icon">▣</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-digital-quiz-buzzer">elly-digital-quiz-buzzer</a></h3><p>Four-channel digital quiz buzzer with timing, priority, and reset logic.</p><div class="repo-meta"><span><i class="dot c"></i>Digital hardware</span><span>Course project</span></div></article>
+          <article class="repo-card" data-search="elly smart parcel navigation smart parcel pickup navigation embedded interaction"><div class="repo-card-top"><span class="repo-icon">▣</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-smart-parcel-navigation">elly-smart-parcel-navigation</a></h3><p>Embedded navigation and interaction concept for a smart parcel pickup system.</p><div class="repo-meta"><span><i class="dot c"></i>Embedded</span><span>Interaction</span></div></article>
+          <article class="repo-card" data-search="elly home theater 150 inch home theater display optical system"><div class="repo-card-top"><span class="repo-icon">▣</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-home-theater-150-inch">elly-home-theater-150-inch</a></h3><p>Large-screen home theater design focused on display architecture and optical implementation.</p><div class="repo-meta"><span><i class="dot matlab"></i>Optical system</span><span>Design study</span></div></article>
+          <article class="repo-card" data-search="elly automotive tbox internship internship automotive t-box embedded testing"><div class="repo-card-top"><span class="repo-icon">▤</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-automotive-tbox-internship">elly-automotive-tbox-internship</a></h3><p>Internship report covering automotive T-Box functional research, development, and testing.</p><div class="repo-meta"><span><i class="dot docs"></i>Report</span><span>Internship</span></div></article>
+          <article class="repo-card" data-search="elly yang cv curriculum vitae resume profile"><div class="repo-card-top"><span class="repo-icon">▤</span><span class="repo-type">Public</span></div><h3><a href="https://github.com/EllyYang0424/elly-yang-cv">elly-yang-cv</a></h3><p>Curriculum vitae with education, technical skills, project experience, and supporting materials.</p><div class="repo-meta"><span><i class="dot docs"></i>Documents</span><span>Profile</span></div></article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No repositories match that search.</p>
+      </section>
 
-    <section id="experience" class="section container">
-      <p class="eyebrow">EXPERIENCE &amp; PORTFOLIO</p>
-      <h2>Project archive</h2>
-      <p class="section-intro">Every portfolio item has its own repository with the corresponding report or reference file.</p>
-      <div class="resource-grid">
-        <a class="resource" href="https://github.com/sndaaa/elly-yang-cv"><strong>Curriculum Vitae</strong><span>Education, internship, projects, awards, and technical skills ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-automotive-tbox-internship"><strong>Automotive T-Box Internship Report</strong><span>Functional research, development, and testing ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-digital-quiz-buzzer"><strong>Digital Quiz Buzzer</strong><span>Four-channel digital hardware and software design ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-license-plate-recognition"><strong>Intelligent License Plate Recognition</strong><span>Computer vision and OCR system design ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-laser-beam-expander"><strong>Laser Beam Expander System</strong><span>Optical system simulation and design ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-optical-power-meter"><strong>Optical Power Meter</strong><span>Photodetection, analog front end, and STM32 display ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-point-light-tracking"><strong>Point Light Source Tracking</strong><span>Automatic tracking system design ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-smart-parcel-navigation"><strong>Smart Parcel Pickup Navigation</strong><span>Embedded navigation and interaction concept ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-home-theater-150-inch"><strong>150-inch Home Theater System</strong><span>Large-screen display solution design ↗</span></a>
-        <a class="resource" href="https://github.com/sndaaa/elly-stm32-audio-player"><strong>STM32 Audio Player</strong><span>TouchGFX, FATFS, DMA, and WAV playback ↗</span></a>
-      </div>
-    </section>
-
-    <section id="contact" class="contact container">
-      <div><p class="eyebrow">GET IN TOUCH</p><h2>Let's build something interesting.</h2></div>
-      <a class="button primary" href="mailto:Elly@stu.xiyou.edu.com">Elly@stu.xiyou.edu.com ↗</a>
+      <section id="contact" class="contact-panel"><div><p class="eyebrow">OPEN TO CONVERSATION</p><h2>Interested in embedded, optical, or FPGA work?</h2><p>Email me or browse the repositories above to see the implementation details and reports.</p></div><a class="primary-button" href="mailto:Elly@stu.xiyou.edu.com">Email Elly ↗</a></section>
+      <footer><span>© 2026 Elly Yang</span><span>Built with HTML &amp; CSS · Hosted on GitHub Pages</span></footer>
     </section>
   </main>
-
-  <footer class="footer container"><span>© 2026 Elly Yang</span><span>Built with HTML &amp; CSS · Hosted on GitHub Pages</span></footer>
+  <script>
+    const search = document.querySelector('#repo-search');
+    const cards = [...document.querySelectorAll('.repo-card')];
+    const empty = document.querySelector('#empty-state');
+    search.addEventListener('input', () => {
+      const query = search.value.trim().toLowerCase();
+      let visible = 0;
+      cards.forEach(card => { const text = (card.dataset.search + ' ' + card.textContent).toLowerCase(); const show = !query || text.includes(query); card.hidden = !show; if (show) visible += 1; });
+      empty.hidden = visible !== 0;
+    });
+  </script>
 </body>
 </html>

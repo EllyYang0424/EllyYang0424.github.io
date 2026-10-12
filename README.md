@@ -1,30 +1,27 @@
-# Elly Yang's Homepage
+# Elly Yang · Engineering Portfolio
 
-Personal homepage and engineering portfolio for Elly Yang, an undergraduate student in Optoelectronic Information Science and Engineering.
+This repository powers [Elly Yang's personal homepage](https://EllyYang0424.github.io/). It follows the structure of a GitHub profile: a compact profile column on the left and one unified repository archive on the right.
 
-## Featured repositories
+## Portfolio archive
 
-- [16-Point FNT Hardware Core](https://github.com/sndaaa/fnt16-hardware-core)
-- [Frequency-Domain Dispersion Compensation LUT](https://github.com/sndaaa/dispersion-compensation-lut)
-- [Streaming Symbol Synchronization](https://github.com/sndaaa/streaming-symbol-sync)
-- [Configurable FNT Dispersion-Compensation Accelerator](https://github.com/sndaaa/fnt-dispersion-accelerator)
+The homepage contains all 14 public repositories in one searchable list:
 
-## Individual portfolio repositories
+- [fnt16-hardware-core](https://github.com/EllyYang0424/fnt16-hardware-core)
+- [dispersion-compensation-lut](https://github.com/EllyYang0424/dispersion-compensation-lut)
+- [streaming-symbol-sync](https://github.com/EllyYang0424/streaming-symbol-sync)
+- [fnt-dispersion-accelerator](https://github.com/EllyYang0424/fnt-dispersion-accelerator)
+- [elly-stm32-audio-player](https://github.com/EllyYang0424/elly-stm32-audio-player)
+- [elly-optical-power-meter](https://github.com/EllyYang0424/elly-optical-power-meter)
+- [elly-point-light-tracking](https://github.com/EllyYang0424/elly-point-light-tracking)
+- [elly-laser-beam-expander](https://github.com/EllyYang0424/elly-laser-beam-expander)
+- [elly-license-plate-recognition](https://github.com/EllyYang0424/elly-license-plate-recognition)
+- [elly-digital-quiz-buzzer](https://github.com/EllyYang0424/elly-digital-quiz-buzzer)
+- [elly-smart-parcel-navigation](https://github.com/EllyYang0424/elly-smart-parcel-navigation)
+- [elly-home-theater-150-inch](https://github.com/EllyYang0424/elly-home-theater-150-inch)
+- [elly-automotive-tbox-internship](https://github.com/EllyYang0424/elly-automotive-tbox-internship)
+- [elly-yang-cv](https://github.com/EllyYang0424/elly-yang-cv)
 
-Each additional portfolio item has its own repository containing a short README and its corresponding report or reference file:
-
-- [Curriculum Vitae](https://github.com/sndaaa/elly-yang-cv)
-- [Automotive T-Box Internship Report](https://github.com/sndaaa/elly-automotive-tbox-internship)
-- [Digital Quiz Buzzer](https://github.com/sndaaa/elly-digital-quiz-buzzer)
-- [Intelligent License Plate Recognition](https://github.com/sndaaa/elly-license-plate-recognition)
-- [Laser Beam Expander System](https://github.com/sndaaa/elly-laser-beam-expander)
-- [Optical Power Meter](https://github.com/sndaaa/elly-optical-power-meter)
-- [Point Light Source Tracking](https://github.com/sndaaa/elly-point-light-tracking)
-- [Smart Parcel Pickup Navigation](https://github.com/sndaaa/elly-smart-parcel-navigation)
-- [150-inch Home Theater System](https://github.com/sndaaa/elly-home-theater-150-inch)
-- [STM32 Audio Player](https://github.com/sndaaa/elly-stm32-audio-player)
-
-The homepage links to all fourteen repositories so every project and supplied document has a dedicated place.
+The four FPGA/RTL studies, eight other engineering projects, internship report, and CV are intentionally presented as one repository archive so no project is hidden in a separate section.
 
 ## Contact
 
